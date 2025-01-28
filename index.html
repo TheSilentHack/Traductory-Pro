@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<!--© Copyright 2025 AnonymusTheGreat
+All Rights Reserved. Tous Droits Réservés.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductory Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="https://linktionnary.wordpress.com/wp-content/uploads/2025/01/copy-of-untitled-design.png" type="image/png">
+</head>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://linktionnary.wordpress.com/wp-content/uploads/2025/01/etc.png" alt="Logo de Traductory Pro" title="Traductory Pro, le traducteur créé par AnonymusTheGreat">
+                </a>
+            </div>        
+            <h1><strong>4.0</strong></h1>
+        <!-- Button with 3 bars (hamburger icon) -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+            <li>À propos du site
+                <!-- Menu déroulant -->
+                <div class="dropdown-content">
+                    <p>Ce site est le traducteur créé par AnonymusTheGreat, Traductory Pro.
+                        <br>Ce site est actuellement à sa version 4.0.
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="nav-links" id="nav-links">
+            <li>À propos de l'auteur
+                <!-- Menu déroulant -->
+                <div class="dropdown-content">
+                    <p>AnonymusTheGreat est un programmeur qui a notamment créé<br>
+                    LinktoryPro.com, le dictionnaire des liens sécurisés <br>(actuellement 63 sites).
+                    </p>
+                </div>
+            </li>
+        </ul>
+
+
+        </div>
+        <strong><h3>Le traducteur officiel du programmeur AnonymusTheGreat !!!
+            <br>Traduisez n'importe quel texte dans 220 langues.
+        </h3></strong>
+        <main>
+            <div class="translator-box">
+            <!-- Source language box -->
+            <div class="box">
+                <textarea id="textToTranslate" placeholder="Tapez ou collez le texte à traduire..."></textarea>
+                <div class="languages">
+                    <select id="sourceLang" onchange="translateText()">
+                        <option value="auto">Auto-détection</option>
+                        <option value="ab">Abkhaze</option>
+                        <option value="ace">Aceh</option>
+                        <option value="ach">Acholi</option>
+                        <option value="aa">Afar</option>
+                        <option value="af">Afrikaans</option>
+                        <option value="ak">Akan</option>
+                        <option value="sq">Albanais</option>
+                        <option value="de">Allemand</option>
+                        <option value="alz">Alur</option>
+                        <option value="am">Amharique</option>
+                        <option value="en">Anglais</option>
+                        <option value="ar">Arabe</option>
+                        <option value="hy">Arménien</option>
+                        <option value="as">Assamais</option>
+                        <option value="av">Avar</option>
+                        <option value="awa">Awadhi</option>
+                        <option value="ay">Aymara</option>
+                        <option value="az">Azéri</option>
+                        <option value="ba">Bachkir</option>
+                        <option value="ban">Balinais</option>
+                        <option value="bal">Baloutchi</option>
+                        <option value="bm">Bambara</option>
+                        <option value="bci">Baoulé</option>
+                        <option value="eu">Basque</option>
+                        <option value="btx">Batak Karo</option>
+                        <option value="bts">Batak Simalungun</option>
+                        <option value="bbc">Batak Toba</option>
+                        <option value="bem">Bemba</option>
+                        <option value="bn">Bengali</option>
+                        <option value="bew">Betawi</option>
+                        <option value="bho">Bhojpuri</option>
+                        <option value="bcl">Bicol</option>
+                        <option value="be">Biélorusse</option>
+                        <option value="my">Birman</option>
+                        <option value="bs">Bosniaque</option>
+                        <option value="bua">Bouriate</option>
+                        <option value="yue">Cantonais</option>
+                        <option value="ca">Catalan</option>
+                        <option value="ceb">Cebuano</option>
+                        <option value="cha">Chamorro</option>
+                        <option value="ny">Chichewa</option>
+                        <option value="zh-CN">Chinois (Cantonais)</option>
+                        <option value="zh">Chinois (Mandarin)</option>
+                        <option value="zh-TW">Chinois (Traditionnel)</option>
+                        <option value="chk">Chuuk</option>
+                        <option value="si">Cingalais</option>
+                        <option value="ko">Coréen</option>
+                        <option value="co">Corse</option>
+                        <option value="ht">Créole haïtien</option>
+                        <option value="mfe">Créole mauricien</option>
+                        <option value="crs">Créole seychellois</option>
+                        <option value="hr">Croate</option>
+                        <option value="da">Danois</option>
+                        <option value="fa">Dari</option>
+                        <option value="din">Dinka</option>
+                        <option value="dyu">Dioula</option>
+                        <option value="dv">Divéhi</option>
+                        <option value="doi">Dogri</option>
+                        <option value="dmv">Dombe</option>
+                        <option value="dzo">Dzongkha</option>
+                        <option value="es">Espagnol</option>
+                        <option value="eo">Espéranto</option>
+                        <option value="et">Estonien</option>
+                        <option value="ee">Éwé</option>
+                        <option value="fo">Féroïen</option>
+                        <option value="fj">Fidjien</option>
+                        <option value="fi">Finnois</option>
+                        <option value="fon">Fon</option>
+                        <option value="fr">Français</option>
+                        <option value="fr-CA">Français (Canada)</option>
+                        <option value="fur">Frioulan</option>
+                        <option value="fy">Frison</option>
+                        <option value="gaa">Ga</option>
+                        <option value="gd">Gaélique (Écosse)</option>
+                        <option value="gl">Galicien</option>
+                        <option value="cy">Gallois</option>
+                        <option value="ka">Géorgien</option>
+                        <option value="el">Grec</option>
+                        <option value="gn">Guarani</option>
+                        <option value="gu">Gujarati</option>
+                        <option value="cnh">Hakha Chin</option>
+                        <option value="ha">Haoussa</option>
+                        <option value="haw">Hawaïen</option>
+                        <option value="he">Hébreu</option>
+                        <option value="hil">Hiligaïnon</option>
+                        <option value="hi">Hindi</option>
+                        <option value="hmn">Hmong</option>
+                        <option value="hu">Hongrois</option>
+                        <option value="hrx">Hunsrik</option>
+                        <option value="iba">Iban</option>
+                        <option value="ig">Igbo</option>
+                        <option value="ilo">Ilocano</option>
+                        <option value="id">Indonésien</option>
+                        <option value="iu">Inuktitut</option>
+                        <option value="is">Islandais</option>
+                        <option value="it">Italien</option>
+                        <option value="ja">Japonais</option>
+                        <option value="kac">Jingpo</option>                        
+                        <option value="kl">Kalaalisut (Groenlandais)</option>
+                        <option value="kn">Kannada</option>
+                        <option value="kr">Kanuri</option>
+                        <option value="kk">Kazakh</option>
+                        <option value="kha">Khasi</option>
+                        <option value="km">Khmer</option>
+                        <option value="kg">Kikongo</option>
+                        <option value="rw">Kinyarwanda</option>
+                        <option value="ky">Kirghiz</option>
+                        <option value="ktu">Kituba</option>
+                        <option value="trp">Kot Borok</option>
+                        <option value="kv">Komi</option>
+                        <option value="kok">Konkani</option>
+                        <option value="kri">Krio</option>
+                        <option value="ku">Kurde</option>
+                        <option value="lo">Laotien</option>
+                        <option value="ltg">Latgalien</option>
+                        <option value="la">Latin</option>
+                        <option value="lv">Letton</option>
+                        <option value="lij">Ligure</option>
+                        <option value="li">Limbourgeois</option>
+                        <option value="ln">Lingala</option>
+                        <option value="lmo">Lombard</option>
+                        <option value="luo">Luo</option>
+                        <option value="lb">Luxembourgeois</option>
+                        <option value="mak">Macassar</option>
+                        <option value="mk">Macédonien</option>
+                        <option value="mad">Madurais</option>
+                        <option value="mai">Maïthili</option>
+                        <option value="ms">Malais (Jawi)</option>
+                        <option value="ml">Malayalam</option>
+                        <option value="mg">Malgache</option>
+                        <option value="mam">Mam</option>
+                        <option value="gv">Manx</option>
+                        <option value="mr">Marathi</option>
+                        <option value="mhr">Mari des prairies</option>
+                        <option value="mh">Marshallais</option>
+                        <option value="mwr">Marwari</option>
+                        <option value="yua">Maya yucatèque</option>
+                        <option value="mni">Meitei (Manipuri)</option>
+                        <option value="min">Minangkabau</option>
+                        <option value="lus">Mizo</option>
+                        <option value="mn">Mongol</option>
+                        <option value="nqo">N'ko</option>
+                        <option value="nhw">Nahuatl (Huasteca oriental)</option>
+                        <option value="ndc">Ndau</option>
+                        <option value="nr">Ndébélé (Sud)</option>
+                        <option value="nl">Néerlandais</option>
+                        <option value="ne">Népalais</option>
+                        <option value="new">Nepalbhasha (Newari)</option>
+                        <option value="nb">Norvégien (Bokmål)</option>
+                        <option value="no">Norvégien (Nyorsk)</option>
+                        <option value="nus">Nuer</option>
+                        <option value="oc">Occitan</option>
+                        <option value="or">Odia (Oriya)</option>
+                        <option value="om">Oromo</option>
+                        <option value="os">Ossète</option>
+                        <option value="udm">Oudmourte</option>
+                        <option value="ug">Ouïgour</option>
+                        <option value="uz">Ouzbek</option>
+                        <option value="ps">Pachtô</option>
+                        <option value="pam">Pampangan</option>
+                        <option value="pag">Pangasinan</option>
+                        <option value="pa">Panjabi</option>
+                        <option value="pap">Papiamento</option>
+                        <option value="jam">Patois jamaïcain</option>
+                        <option value="fa">Persan</option>
+                        <option value="ff">Peul</option>
+                        <option value="fil">Philippin</option>
+                        <option value="pl">Polonais</option>
+                        <option value="pt-BR">Portugais (Brésil)</option>
+                        <option value="pt-PT">Portugais (Portugal)</option>
+                        <option value="kek">Q'eqchi'</option>
+                        <option value="qu">Quechua</option>
+                        <option value="rmy">Romani</option>
+                        <option value="rm">Romanche</option>
+                        <option value="ro">Roumain</option>
+                        <option value="rnd">Roundi</option>
+                        <option value="ru">Russe</option>
+                        <option value="se">Same (Nord)</option>
+                        <option value="sm">Samoan</option>
+                        <option value="sg">Sango</option>
+                        <option value="sa">Sanskrit</option>
+                        <option value="sat">Santali</option>
+                        <option value="nso">Sepedi</option>
+                        <option value="sr">Serbe</option>
+                        <option value="st">Sesotho</option>
+                        <option value="shn">Shan</option>
+                        <option value="sn">Shona</option>
+                        <option value="scn">Sicilien</option>
+                        <option value="szl">Silésien</option>
+                        <option value="sd">Sindhi</option>
+                        <option value="sk">Slovaque</option>
+                        <option value="sl">Slovène</option>
+                        <option value="so">Somali</option>
+                        <option value="su">Soudanais</option>
+                        <option value="sus">Soussou</option>
+                        <option value="sv">Suédois</option>
+                        <option value="sw">Swahili</option>
+                        <option value="ss">Swati</option>
+                        <option value="tg">Tadjik</option>
+                        <option value="ty">Tahitien</option>
+                        <option value="ta">Tamil</option>
+                        <option value="tt">Tatar</option>
+                        <option value="crh">Tatar de Crimée (cyrillique)</option>
+                        <option value="crh-Latn">Tatar de Crimée (latin)</option>
+                        <option value="ce">Tchétchène</option>
+                        <option value="cs">Tchèque</option>
+                        <option value="cv">Tchouvache</option>
+                        <option value="te">Telugu</option>
+                        <option value="tet">Tétoum</option>
+                        <option value="th">Thai</option>
+                        <option value="bo">Tibétain</option>
+                        <option value="ti">Tigrigna</option>
+                        <option value="tiv">Tiv</option>
+                        <option value="tr">Turc</option>
+                        <option value="uk">Ukrainien</option>
+                        <option value="ur">Urdu</option>
+                        <option value="vi">Vietnamais</option>
+                        <option value="wo">Wolof</option>
+                        <option value="xh">Xhosa</option>
+                        <option value="yi">Yiddish</option>
+                        <option value="zu">Zulu</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Switch button in the middle -->
+            <button class="switch-btn" onclick="switchLanguages()">⇄</button>
+            
+
+            <!-- Target language box -->
+            <div class="box">
+                <div class="result" id="resultText">La traduction va apparaître ici...</div>
+                <div class="languages">
+                    <select id="targetLang" onchange="translateText()">
+                        <option value="ab">Abkhaze</option>
+                        <option value="ace">Aceh</option>
+                        <option value="ach">Acholi</option>
+                        <option value="aa">Afar</option>
+                        <option value="af">Afrikaans</option>
+                        <option value="ak">Akan</option>
+                        <option value="sq">Albanais</option>
+                        <option value="de">Allemand</option>
+                        <option value="alz">Alur</option>
+                        <option value="am">Amharique</option>
+                        <option value="en">Anglais</option>
+                        <option value="ar">Arabe</option>
+                        <option value="hy">Arménien</option>
+                        <option value="as">Assamais</option>
+                        <option value="av">Avar</option>
+                        <option value="awa">Awadhi</option>
+                        <option value="ay">Aymara</option>
+                        <option value="az">Azéri</option>
+                        <option value="ba">Bachkir</option>
+                        <option value="ban">Balinais</option>
+                        <option value="bal">Baloutchi</option>
+                        <option value="bm">Bambara</option>
+                        <option value="bci">Baoulé</option>
+                        <option value="eu">Basque</option>
+                        <option value="btx">Batak Karo</option>
+                        <option value="bts">Batak Simalungun</option>
+                        <option value="bbc">Batak Toba</option>
+                        <option value="bem">Bemba</option>
+                        <option value="bn">Bengali</option>
+                        <option value="bew">Betawi</option>
+                        <option value="bho">Bhojpuri</option>
+                        <option value="bcl">Bicol</option>
+                        <option value="be">Biélorusse</option>
+                        <option value="my">Birman</option>
+                        <option value="bs">Bosniaque</option>
+                        <option value="bua">Bouriate</option>
+                        <option value="yue">Cantonais</option>
+                        <option value="ca">Catalan</option>
+                        <option value="ceb">Cebuano</option>
+                        <option value="cha">Chamorro</option>
+                        <option value="ny">Chichewa</option>
+                        <option value="zh-CN">Chinois (Cantonais)</option>
+                        <option value="zh">Chinois (Mandarin)</option>
+                        <option value="zh-TW">Chinois (Traditionnel)</option>
+                        <option value="chk">Chuuk</option>
+                        <option value="si">Cingalais</option>
+                        <option value="ko">Coréen</option>
+                        <option value="co">Corse</option>
+                        <option value="ht">Créole haïtien</option>
+                        <option value="mfe">Créole mauricien</option>
+                        <option value="crs">Créole seychellois</option>
+                        <option value="hr">Croate</option>
+                        <option value="da">Danois</option>
+                        <option value="fa">Dari</option>
+                        <option value="din">Dinka</option>
+                        <option value="dyu">Dioula</option>
+                        <option value="dv">Divéhi</option>
+                        <option value="doi">Dogri</option>
+                        <option value="dmv">Dombe</option>
+                        <option value="dzo">Dzongkha</option>
+                        <option value="es">Espagnol</option>
+                        <option value="eo">Espéranto</option>
+                        <option value="et">Estonien</option>
+                        <option value="ee">Éwé</option>
+                        <option value="fo">Féroïen</option>
+                        <option value="fj">Fidjien</option>
+                        <option value="fi">Finnois</option>
+                        <option value="fon">Fon</option>
+                        <option value="fr">Français</option>
+                        <option value="fr-CA">Français (Canada)</option>
+                        <option value="fur">Frioulan</option>
+                        <option value="fy">Frison</option>
+                        <option value="gaa">Ga</option>
+                        <option value="gd">Gaélique (Écosse)</option>
+                        <option value="gl">Galicien</option>
+                        <option value="cy">Gallois</option>
+                        <option value="ka">Géorgien</option>
+                        <option value="el">Grec</option>
+                        <option value="gn">Guarani</option>
+                        <option value="gu">Gujarati</option>
+                        <option value="cnh">Hakha Chin</option>
+                        <option value="ha">Haoussa</option>
+                        <option value="haw">Hawaïen</option>
+                        <option value="he">Hébreu</option>
+                        <option value="hil">Hiligaïnon</option>
+                        <option value="hi">Hindi</option>
+                        <option value="hmn">Hmong</option>
+                        <option value="hu">Hongrois</option>
+                        <option value="hrx">Hunsrik</option>
+                        <option value="iba">Iban</option>
+                        <option value="ig">Igbo</option>
+                        <option value="ilo">Ilocano</option>
+                        <option value="id">Indonésien</option>
+                        <option value="iu">Inuktitut</option>
+                        <option value="is">Islandais</option>
+                        <option value="it">Italien</option>
+                        <option value="ja">Japonais</option>
+                        <option value="kac">Jingpo</option>                        
+                        <option value="kl">Kalaalisut (Groenlandais)</option>
+                        <option value="kn">Kannada</option>
+                        <option value="kr">Kanuri</option>
+                        <option value="kk">Kazakh</option>
+                        <option value="kha">Khasi</option>
+                        <option value="km">Khmer</option>
+                        <option value="kg">Kikongo</option>
+                        <option value="rw">Kinyarwanda</option>
+                        <option value="ky">Kirghiz</option>
+                        <option value="ktu">Kituba</option>
+                        <option value="trp">Kot Borok</option>
+                        <option value="kv">Komi</option>
+                        <option value="kok">Konkani</option>
+                        <option value="kri">Krio</option>
+                        <option value="ku">Kurde</option>
+                        <option value="lo">Laotien</option>
+                        <option value="ltg">Latgalien</option>
+                        <option value="la">Latin</option>
+                        <option value="lv">Letton</option>
+                        <option value="lij">Ligure</option>
+                        <option value="li">Limbourgeois</option>
+                        <option value="ln">Lingala</option>
+                        <option value="lmo">Lombard</option>
+                        <option value="luo">Luo</option>
+                        <option value="lb">Luxembourgeois</option>
+                        <option value="mak">Macassar</option>
+                        <option value="mk">Macédonien</option>
+                        <option value="mad">Madurais</option>
+                        <option value="mai">Maïthili</option>
+                        <option value="ms">Malais (Jawi)</option>
+                        <option value="ml">Malayalam</option>
+                        <option value="mg">Malgache</option>
+                        <option value="mam">Mam</option>
+                        <option value="gv">Manx</option>
+                        <option value="mr">Marathi</option>
+                        <option value="mhr">Mari des prairies</option>
+                        <option value="mh">Marshallais</option>
+                        <option value="mwr">Marwari</option>
+                        <option value="yua">Maya yucatèque</option>
+                        <option value="mni">Meitei (Manipuri)</option>
+                        <option value="min">Minangkabau</option>
+                        <option value="lus">Mizo</option>
+                        <option value="mn">Mongol</option>
+                        <option value="nqo">N'ko</option>
+                        <option value="nhw">Nahuatl (Huasteca oriental)</option>
+                        <option value="ndc">Ndau</option>
+                        <option value="nr">Ndébélé (Sud)</option>
+                        <option value="nl">Néerlandais</option>
+                        <option value="ne">Népalais</option>
+                        <option value="new">Nepalbhasha (Newari)</option>
+                        <option value="nb">Norvégien (Bokmål)</option>
+                        <option value="no">Norvégien (Nyorsk)</option>
+                        <option value="nus">Nuer</option>
+                        <option value="oc">Occitan</option>
+                        <option value="or">Odia (Oriya)</option>
+                        <option value="om">Oromo</option>
+                        <option value="os">Ossète</option>
+                        <option value="udm">Oudmourte</option>
+                        <option value="ug">Ouïgour</option>
+                        <option value="uz">Ouzbek</option>
+                        <option value="ps">Pachtô</option>
+                        <option value="pam">Pampangan</option>
+                        <option value="pag">Pangasinan</option>
+                        <option value="pa">Panjabi</option>
+                        <option value="pap">Papiamento</option>
+                        <option value="jam">Patois jamaïcain</option>
+                        <option value="fa">Persan</option>
+                        <option value="ff">Peul</option>
+                        <option value="fil">Philippin</option>
+                        <option value="pl">Polonais</option>
+                        <option value="pt-BR">Portugais (Brésil)</option>
+                        <option value="pt-PT">Portugais (Portugal)</option>
+                        <option value="kek">Q'eqchi'</option>
+                        <option value="qu">Quechua</option>
+                        <option value="rmy">Romani</option>
+                        <option value="rm">Romanche</option>
+                        <option value="ro">Roumain</option>
+                        <option value="rnd">Roundi</option>
+                        <option value="ru">Russe</option>
+                        <option value="se">Same (Nord)</option>
+                        <option value="sm">Samoan</option>
+                        <option value="sg">Sango</option>
+                        <option value="sa">Sanskrit</option>
+                        <option value="sat">Santali</option>
+                        <option value="nso">Sepedi</option>
+                        <option value="sr">Serbe</option>
+                        <option value="st">Sesotho</option>
+                        <option value="shn">Shan</option>
+                        <option value="sn">Shona</option>
+                        <option value="scn">Sicilien</option>
+                        <option value="szl">Silésien</option>
+                        <option value="sd">Sindhi</option>
+                        <option value="sk">Slovaque</option>
+                        <option value="sl">Slovène</option>
+                        <option value="so">Somali</option>
+                        <option value="su">Soudanais</option>
+                        <option value="sus">Soussou</option>
+                        <option value="sv">Suédois</option>
+                        <option value="sw">Swahili</option>
+                        <option value="ss">Swati</option>
+                        <option value="tg">Tadjik</option>
+                        <option value="ty">Tahitien</option>
+                        <option value="ta">Tamil</option>
+                        <option value="tt">Tatar</option>
+                        <option value="crh">Tatar de Crimée (cyrillique)</option>
+                        <option value="crh-Latn">Tatar de Crimée (latin)</option>
+                        <option value="ce">Tchétchène</option>
+                        <option value="cs">Tchèque</option>
+                        <option value="cv">Tchouvache</option>
+                        <option value="te">Telugu</option>
+                        <option value="tet">Tétoum</option>
+                        <option value="th">Thai</option>
+                        <option value="bo">Tibétain</option>
+                        <option value="ti">Tigrigna</option>
+                        <option value="tiv">Tiv</option>
+                        <option value="tr">Turc</option>
+                        <option value="uk">Ukrainien</option>
+                        <option value="ur">Urdu</option>
+                        <option value="vi">Vietnamais</option>
+                        <option value="wo">Wolof</option>
+                        <option value="xh">Xhosa</option>
+                        <option value="yi">Yiddish</option>
+                        <option value="zu">Zulu</option>
+                    </select>
+                </div>
+            </div>
+            </div>
+            </main>
+        <footer>
+        <strong>Développé AnonymusTheGreat<br>Version 4.0 créée le 20/01/2025<br>© AnonymusTheGreat
+            <br>All Rights Reserved. Tous Droits Réservés.</strong>
+        </footer>
+
+    <!-- Add the Google Translate API library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js" integrity="sha512-v8+bPcpk4Sj7CKB11+gK/FnsbgQ15jTwZamnBf/xDmiQDcgOIYufBo6Acu1y30vrk8gg5su4x0CG3zfPaq5Fcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
